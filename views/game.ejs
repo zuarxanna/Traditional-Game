@@ -1,0 +1,56 @@
+<section class='game-page'>
+  <!-- Header start -->
+  <nav class='navbar-light'>
+    <div class='nav-game container-fluid d-flex justify-content-start'>
+      <a class='back mt-auto mb-auto me-4' href='/'>&lt;</a>
+      <a class='navbar-title mt-auto mb-auto me-4' href='#'>
+        <img src='/assets/img/logo.png' alt='' class='logo d-inline-block align-text-center me-4' />
+        ROCK PAPER SCISSOR
+      </a>
+    </div>
+  </nav>
+  <!-- Header end -->
+
+  <!-- Game Page start -->
+  <div class='m-3'>
+    <div class='container'>
+      <div class='row d-flex justify-content-center align-items-center'>
+        <div class='col-md'>
+          <div class='player'>
+            <h2 class='text-center mb-4'>PLAYER 1</h2>
+            <div class='player-hands d-flex flex-column'>
+              <img src='/assets/img/rock.png' id='rock' class='rock img-fluid hand player-hand ms-auto me-auto mb-4 p-4'
+                onclick='game.match(this)' />
+              <img src='/assets/img/paper.png' id='paper'
+                class='paper img-fluid hand player-hand ms-auto me-auto mb-4 p-4' onclick='game.match(this)' />
+              <img src='/assets/img/scissor.png' id='scissor'
+                class='scissor img-fluid hand player-hand ms-auto me-auto mb-4 p-4' onclick='game.match(this)' />
+            </div>
+          </div>
+        </div>
+        <div class='col-md'>
+          <h2 id='result' class='text-center versus winner'>VS</h2>
+        </div>
+        <div class='col-md'>
+          <div class='comp'>
+            <h2 class='text-center mb-4'>COMP</h2>
+            <div class='comp comp-hands d-flex flex-column'>
+              <img src='/assets/img/rock.png' id='comp-rock'
+                class='hand comp-hand hand rock ms-auto me-auto mb-4 p-4' />
+              <img src='/assets/img/paper.png' id='comp-paper'
+                class='hand comp-hand hand paper ms-auto me-auto mb-4 p-4' />
+              <img src='/assets/img/scissor.png' id='comp-scissor'
+                class='hand comp-hand hand scissor ms-auto me-auto mb-4 p-4' />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col d-flex justify-content-center'>
+          <img class='refresh' src='/assets/img/refresh.png' alt='' onclick='game.refresh()' />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Game Page end -->
+</section>

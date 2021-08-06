@@ -1,0 +1,52 @@
+<!-- main screen starts -->
+<div class='login-screen' id='main'>
+    <div class='container h-100'>
+        <div class='row h-100 justify-content-center align-items-center'>
+            <form method='POST' action='/signup' class='col-md-6 bg text-light' id='signup'>
+                <h2 class="text-center mb-4">SIGN UP</h2>
+                <div class='form-content-login'>
+                    <% if (message) { %>
+                        <div class="alert alert-danger">
+                            <%= message %>
+                        </div>
+                        <% } %>
+                            <div class='mb-3'>
+                                <label for='firstname' class='form-label'>FIRST NAME</label>
+                                <input type='text' class='form-control transparent-input text-light' id='firstname'
+                                    aria-describedby='firstname' placeholder='input your first name' name='firstname'
+                                    required />
+                            </div>
+                            <div class='mb-3'>
+                                <label for='lastname' class='form-label'>LAST NAME</label>
+                                <input type='text' class='form-control transparent-input text-light' id='lastname'
+                                    aria-describedby='username' placeholder='input your last name' name='lastname'
+                                    required />
+                            </div>
+                            <div class='mb-3'>
+                                <label for='country' class='form-label'>COUNTRY</label>
+                                <input type='text' class='form-control transparent-input text-light' id='country'
+                                    aria-describedby='country' placeholder='input your country' name='country'
+                                    required />
+                            </div>
+                            <div class='mb-3'>
+                                <label for='username' class='form-label'>USERNAME</label>
+                                <input type='text' class='form-control transparent-input text-light' id='username'
+                                    aria-describedby='username' placeholder='input your username' name='username'
+                                    required />
+                            </div>
+                            <div class='mb-4'>
+                                <label for='passwordInput' class='form-label'>PASSWORD</label>
+                                <input type='password' class='form-control transparent-input text-light'
+                                    id='passwordInput' aria-describedby='passwordHelp' placeholder='input your password'
+                                    name='password' required />
+                            </div>
+                            <div class='d-flex'>
+                                <button type='submit' class='btn btn--custom mx-auto'>
+                                    SIGN UP
+                                </button>
+                            </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
